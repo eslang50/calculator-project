@@ -14,6 +14,12 @@ function operate(operator, a, b) {
 
 // Display digit function
 
-function display(num) {
-  document.getElementById("input").value += num;
+function display(input) {
+  if(input === 'C') {
+    document.getElementById("input").value = '';
+  }
+  else {
+    document.getElementById("input").value += input;
+  }
+  
 }
