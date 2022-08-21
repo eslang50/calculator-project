@@ -1,0 +1,42 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.digits {
+  display: grid;
+  grid-template-columns: repeat(3,60px);
+}
+
+.operations {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+input {
+  height: 18px;
+}
+
+#add,
+#sub,
+#mult,
+#div {
+  padding: 15px 18px;
+  
+}
+
+#digit {
+  padding: 12px 6px;
+}
