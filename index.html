@@ -11,9 +11,8 @@
 <body>
   <h1>Calculator</h1>
   <div class="calculator">
-    
     <div class="container">
-      <div>
+      <div class="display">
         <input id="input" type="text" value="">
       </div>
       <div class="digits">
@@ -28,18 +27,16 @@
         <button id="digit" onclick="display(9)">9</button>
         <button id="digit" onclick="display('C')">C</button>
         <button id="digit" onclick="display(0)">0</button>
-        <button id="clear" onclick="">=</button>
+        <button id="clear" onclick="display('=')">=</button>
       </div>
     </div>
       <div class="operations">
-        <button id="add" onclick="display('+')">+</button>
-        <button id="sub" onclick="display('-')">-</button>
-        <button id="div" onclick="display('/')">/</button>
-        <button id="mult" onclick="display('*')">*</button>
-       
+        <button class="op" onclick="display('+')">+</button>
+        <button class="op" onclick="display('-')">–</button>
+        <button class="op" onclick="display('/')">÷</button>
+        <button class="op" onclick="display('*')">×</button>    
       </div>
     </div>
   </div>
-
 </body>
 </html>

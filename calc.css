@@ -1,3 +1,7 @@
+body {
+  background-color: antiquewhite;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -6,37 +10,49 @@ h1 {
 .calculator {
   display: flex;
   justify-content: center;
-  
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  border: 5px black solid;
+  
 }
 
 .digits {
   display: grid;
   grid-template-columns: repeat(3,60px);
+  gap: 5px;
+  background-color: black;
+  
 }
 
 .operations {
   display: flex;
   flex-direction: column;
+  border: 5px black solid;
+  border-left: 0px;
   
 }
 
 input {
-  height: 18px;
+  height: 40px;
+  width: 182px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  background-color: darkgray;
+  border-bottom: black 5px solid;
+  
 }
 
-#add,
-#sub,
-#mult,
-#div {
-  padding: 15px 18px;
-  
+.op {
+  padding: 16px 21px;
+  font-weight: bold;
+  font-size: 21px;
 }
 
 #digit {
   padding: 12px 6px;
+  font-size: 14px;
 }
