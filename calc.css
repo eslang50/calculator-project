@@ -5,6 +5,7 @@ body {
 h1 {
   display: flex;
   justify-content: center;
+  font-size: 2em;
 }
 
 .calculator {
@@ -19,11 +20,12 @@ h1 {
   
 }
 
-.digits {
+.digit-container {
   display: grid;
   grid-template-columns: repeat(3,60px);
   gap: 5px;
   background-color: black;
+  
   
 }
 
@@ -38,7 +40,7 @@ h1 {
 input {
   height: 40px;
   width: 182px;
-  font-size: 18px;
+  font-size: 1.5em;
   font-weight: bold;
   text-align: right;
   background-color: darkgray;
@@ -49,10 +51,18 @@ input {
 .op {
   padding: 16px 21px;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 2em;
 }
 
-#digit {
+.digit {
   padding: 12px 6px;
   font-size: 14px;
+  color: brown;
+  font-size: 1.6em;
+}
+
+.digit:hover,
+.op:hover,
+.clear:hover {
+  background-color:bisque
 }

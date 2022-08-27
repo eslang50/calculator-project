@@ -6,7 +6,15 @@ let subtract = (a,b) => a - b;
 
 let multiply = (a,b) => a * b;
 
-let divide = (a,b) => a / b;
+let divide = (a,b) => 
+{
+  if(b == 0) {
+    document.getElementById("input").value += "Undefined!"
+    console.log("asdfasdf")
+  }
+  a / b;
+};
+  
 
 function operate(operator, a, b) {
   return operator(a,b);
@@ -51,10 +59,16 @@ function display(input) {
   }
 
   else if(input === "=") {
-    let result = operate(operator, firstInput, secondInput);
+    if(operator == divide) {
+      document.getElementById("input").value = "Can't divide by 0!";
+    }
+    else {
+      let result = operate(operator, firstInput, secondInput);
     document.getElementById("input").value = result;
     firstInput = result;
     secondInput = 0;
+    }
+    
   }
 
   else {
